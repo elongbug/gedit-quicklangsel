@@ -23,8 +23,10 @@ from gi.repository import Gedit, GLib, Gio, GObject, GtkSource
 
 # See https://developer.gnome.org/gtk3/stable/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse
 
-ACCELS = [('F3', 'cpp'),
-          ('F4', 'python')]
+ACCELS = [('F2', ''),
+          ('F3', 'c'),
+          ('F4', 'cpp'),
+          ('F5', 'glsl')]
 
 class QuickLanguageSelector(GObject.Object, Gedit.AppActivatable):
     app = GObject.Property(type=Gedit.App)
